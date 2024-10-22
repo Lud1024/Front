@@ -1,0 +1,201 @@
+/* Centrar el contenedor en la pantalla */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Degradado de fondo */
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .login-form {
+    width: 400px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8); 
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+    text-align: center;
+  }
+
+  
+  .login-form h2 {
+    color: #00c6ff; /* Color moderno */
+    margin-bottom: 20px;
+  }
+  
+  .login-form .logo {
+    width: 100px;
+  }
+  
+  .login-form input {
+    width: 90%;
+    margin: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+  }
+  
+  .login-form input:focus {
+    border: 1px solid #0072ff;
+  }
+  
+  .login-form button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff); /* Degradado de botón */
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .login-form button:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff); /* Invertir degradado al pasar el mouse */
+  }
+  
+  .login-form .forgot-password {
+    display: block;
+    margin-top: 20px;
+    color: #00c6ff;
+    text-decoration: none;
+  }
+  
+  .login-form .forgot-password:hover {
+    color: #0072ff;
+    text-decoration: underline;
+  }
+  
+  .error-message {
+    color: #ff4b4b;
+    margin-top: 10px;
+  }
+  
+  /* Estilos para el modal */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75); /* Fondo oscuro */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    background: #fefefe;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    width: 80%;
+    text-align: center;
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+  }
+  
+  .modal-button {
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+  }
+  
+  .modal-button:hover {
+    background-color: #005bb5;
+  }
+
+  
+  /* Estilos para el modal */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.75); /* Fondo oscuro */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: #fefefe;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 500px;
+  width: 80%;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal h2 {
+  margin-top: 0;
+}
+
+.modal p {
+  font-size: 1.2em;
+}
+
+.modal-button {
+  background-color: #0072ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.modal-button:hover {
+  background-color: #005bb5;
+}
+
+/* Icono de error */
+.error-icon {
+  color: #e74c3c;
+  font-size: 3em;
+  margin-bottom: 20px;
+  animation: bounce 1s infinite;
+}
+
+/* Animación de rebote para el icono */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Animación de fadeIn para el modal */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
