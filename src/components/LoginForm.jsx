@@ -5,6 +5,7 @@ import Modal from 'react-modal';
 import { FaExclamationCircle } from 'react-icons/fa'; // Icono de error
 import './LoginForm.css';
 import logo from '../assets/logo.webp';
+//import './Modal.css';      // Importa los estilos del modal
 
 // Establecer el elemento raíz de react-modal
 Modal.setAppElement('#root');
@@ -88,8 +89,7 @@ const LoginForm = () => {
       >
         <div className="modal-content">
           <FaExclamationCircle className="error-icon" />
-          <h2>Error</h2>
-          <p>{errorMessage}</p>
+          <h2>CREDENCIALES INCORRECTAS</h2>  {/* Texto adicional */}
           <button onClick={closeModal} className="modal-button">Cerrar</button>
         </div>
       </Modal>
