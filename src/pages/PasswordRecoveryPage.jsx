@@ -162,8 +162,8 @@ const PasswordRecoveryPage = () => {
           required
         />
 
-        <a href="./" className="forgot-password">Volver al Inicio de Sesión</a>
         <button type="submit">Actualizar Contraseña</button>
+        <a href="./" className="forgot-password">Volver al Inicio de Sesión</a>
       </form>
 
       {/* Modal para mostrar mensajes de éxito o error */}

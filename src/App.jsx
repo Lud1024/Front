@@ -2,16 +2,17 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import PasswordRecoveryPage from './pages/PasswordRecoveryPage';
-import MenuPage from './pages/MenuPage';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import UserCreationPage from './pages/UserCreationPage';  // Página para crear usuarios
+import UserListPage from './pages/UserListPage';  // Página para listar usuarios
 
 const PrivateRoute = ({ children }) => {
   return sessionStorage.getItem('auth') ? children : <Navigate to="/" />;
 };
 
 const AuthRoute = ({ children }) => {
-  return sessionStorage.getItem('auth') ? <Navigate to="/menu" /> : children;
+  return sessionStorage.getItem('auth') ? <Navigate to="/home" /> : children;
 };
 
 const App = () => {
@@ -23,14 +24,6 @@ const App = () => {
         <Route path="/password-recovery" element={<PasswordRecoveryPage />} />
 
         {/* Rutas protegidas */}
-        <Route
-          path="/menu"
-          element={
-            <PrivateRoute>
-              <MenuPage />
-            </PrivateRoute>
-          }
-        />
         <Route
           path="/home"
           element={
@@ -44,6 +37,22 @@ const App = () => {
           element={
             <PrivateRoute>
               <AboutPage />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/user-creation"
+          element={
+            <PrivateRoute>
+              <UserCreationPage />
+            </PrivateRoute>
+          }
+        />
+        <Route
+          path="/user-list"
+          element={
+            <PrivateRoute>
+              <UserListPage />
             </PrivateRoute>
           }
         />

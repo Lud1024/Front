@@ -1,0 +1,170 @@
+/* Estilos para el menú lateral */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(135deg, #1f4aa3, #306fcf); /* Gradiente moderno */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.user-icon {
+  font-size: 5em;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.username {
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* Espaciado entre los elementos */
+}
+
+.sidebar-menu li {
+  width: 100%;
+}
+
+.sidebar-menu a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out, transform 0.3s;
+}
+
+.sidebar-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.505);
+  transform: translateX(10px); /* Efecto de desplazamiento hacia la derecha */
+}
+
+.menu-icon {
+  font-size: 1.8em;
+  margin-right: 15px;
+}
+
+.sidebar-menu li:last-child a {
+  color: #ff4b4b;
+}
+
+.sidebar-menu li:last-child a:hover {
+  background-color: rgba(220, 69, 69, 0.395);
+  transform: translateX(10px);
+}
+
+/* Estilos para el contenedor principal del HomePage */
+.home-container {
+  display: flex;
+  width: 100vw;  /* Asegura que ocupe todo el ancho de la ventana */
+  height: 100vh; /* Asegura que ocupe todo el alto de la ventana */
+  background: linear-gradient(135deg, #e0efff, #f1f6fa); /* Degradado suave */
+  color: #2c3e50;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Evita scroll extra si no es necesario */
+}
+
+/* Sección del contenido principal a la derecha */
+.home-content {
+  flex-grow: 1; /* Se expande para ocupar todo el espacio restante */
+  padding: 50px;
+  background-color: #f9f9f9; /* Fondo claro */
+  color: #2c3e50;
+  overflow-y: auto; /* Habilitar scroll si el contenido es muy grande */
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para separar el contenido del sidebar */
+}
+
+/* Estilos del título principal */
+.home-content h1 {
+  font-size: 3.5em;
+  color: #34495e;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el subtítulo o párrafo */
+.home-content p {
+  font-size: 1.5em;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+/* Mejora de las tarjetas (opcional) */
+.home-cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.home-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  flex-basis: calc(33% - 20px);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.home-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Diseño responsive */
+@media screen and (max-width: 1024px) {
+  .home-content {
+    padding: 30px;
+  }
+
+  .home-cards {
+    flex-direction: column;
+  }
+
+  .home-card {
+    flex-basis: 100%;
+  }
+
+  .home-content h1 {
+    font-size: 2.5em;
+  }
+
+  .home-content p {
+    font-size: 1.3em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-content {
+    padding: 20px;
+  }
+
+  .home-content h1 {
+    font-size: 2em;
+  }
+
+  .home-content p {
+    font-size: 1.2em;
+  }
+}

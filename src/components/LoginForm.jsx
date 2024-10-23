@@ -21,7 +21,7 @@ const LoginForm = () => {
   useEffect(() => {
     // Redirigir al menú si ya existe una sesión activa
     if (sessionStorage.getItem('auth')) {
-      navigate('/menu');
+      navigate('/home');
     }
   }, [navigate]);
 
@@ -33,7 +33,7 @@ const LoginForm = () => {
     try {
       const data = await login(nombreUsuario, contrasena);
       sessionStorage.setItem('auth', true); // Guardar la sesión
-      navigate('/menu'); // Redirigir al menú si todo es correcto
+      navigate('/home'); 
     } catch (error) {
       // Manejar el error dependiendo de la respuesta del servidor
       if (error.response && error.response.status === 401) {
