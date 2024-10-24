@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000/api/usuarios', 
+  baseURL: 'http://localhost:3000/tickets/usuarios', 
 });
 
 export const login = async (nombre_usuario, contraseña) => {

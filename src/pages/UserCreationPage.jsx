@@ -25,7 +25,7 @@ const UserCreationPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/usuarios', formData);
+      const response = await axios.post('http://localhost:3000/tickets/usuarios', formData);
       setSuccessMessage('Usuario creado exitosamente');
       setErrorMessage('');
       // Limpiar el formulario

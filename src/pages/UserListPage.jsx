@@ -9,7 +9,7 @@ const UserListPage = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/usuarios');
+        const response = await axios.get('http://localhost:3000/tickets/usuarios');
         setUsers(response.data);
       } catch (error) {
         console.error('Error al obtener los usuarios:', error);
