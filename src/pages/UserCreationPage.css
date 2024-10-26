@@ -1,0 +1,14 @@
+/* src/pages/UserCreationPage.css */
+
+.user-creation-page {
+    display: flex;
+  }
+  
+  .content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  

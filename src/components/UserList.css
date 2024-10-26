@@ -1,0 +1,88 @@
+.userlist-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  background-color: #f9faff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.userlist-title {
+  font-size: 2em;
+  color: #0077b6;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.search-bar {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #333;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+}
+
+.search-bar input::placeholder {
+  color: #b0bec5;
+}
+
+.search-bar input:focus {
+  border-color: #0077b6;
+  outline: none;
+}
+
+.userlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.userlist-table th, .userlist-table td {
+  padding: 12px;
+  text-align: left;
+  color: #333;
+}
+
+.userlist-table th {
+  background-color: #e0f2fe;
+  color: #0077b6;
+  font-weight: bold;
+}
+
+.userlist-table td {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.userlist-table tr:last-child td {
+  border-bottom: none;
+}
+
+.action-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #0077b6;
+  color: #fff;
+  font-size: 0.9em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover {
+  background-color: #005f8d;
+}

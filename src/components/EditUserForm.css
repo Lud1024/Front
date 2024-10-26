@@ -1,0 +1,142 @@
+/* Contenedor principal del modal */
+.edit-user-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    z-index: 10;
+    box-sizing: border-box;
+  }
+  
+  /* Contenedor del formulario */
+  .edit-user-form {
+    width: 500px; /* Ajusta el ancho aquí */
+    max-width: 90%; /* Asegura que se vea bien en pantallas pequeñas */
+    background-color: #f9faff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Mantiene los elementos dentro del contenedor */
+  }
+  
+  /* Encabezado */
+  .edit-user-form h2 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 20px;
+  }
+  
+  /* Etiquetas */
+  .edit-user-form label {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Inputs y Selects */
+  .edit-user-form input,
+  .edit-user-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #cfd8dc;
+    border-radius: 8px;
+    background-color: #fff; /* Fondo blanco */
+    font-size: 1em;
+    color: #333; /* Color de texto */
+    box-sizing: border-box; /* Asegura que el padding no sobresalga */
+  }
+  
+  .edit-user-form input::placeholder {
+    color: #b0bec5; /* Color del placeholder */
+  }
+  
+  .edit-user-form input:focus,
+  .edit-user-form select:focus {
+    border-color: #0077b6;
+    outline: none;
+  }
+  
+  /* Botón Guardar Cambios */
+  .edit-user-form button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #0077b6;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-user-form button[type="submit"]:hover {
+    background-color: #005f8d;
+  }
+  
+  /* Botón Cancelar */
+  .edit-user-form button[type="button"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+    color: #777;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-user-form button[type="button"]:hover {
+    background-color: #bdbdbd;
+  }
+  
+  /* Estilos del modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .modal h3 {
+    margin-bottom: 20px;
+    color: #0077b6;
+  }
+  
+  .modal button {
+    padding: 10px 20px;
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .modal button:hover {
+    background-color: #005f8d;
+  }
+  
