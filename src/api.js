@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'http://localhost:3000/tickets',
+  baseURL: 'https://nest-tickets.onrender.com/tickets',
 });
 
 // Función para login
