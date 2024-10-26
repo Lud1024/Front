@@ -1,0 +1,16 @@
+.create-ticket-page {
+    display: flex;
+    min-height: 100vh;
+  }
+  
+  .sidebar {
+    width: 250px; /* Ajusta el ancho del sidebar */
+    background-color: #0077b6;
+    color: #fff;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
