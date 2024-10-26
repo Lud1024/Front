@@ -2,8 +2,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  //baseURL: 'https://nest-tickets.onrender.com/tickets',
-  baseURL: 'http://localhost:3000/tickets',
+  baseURL: 'https://nest-tickets.onrender.com/tickets',
+  //baseURL: 'http://localhost:3000/tickets',
 });
 
 export const createTicket = async (ticketData) => {
